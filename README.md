@@ -1,46 +1,50 @@
-# React + TypeScript + Vite
+# CustomizedModal – Reusable accessible modal component (JavaScript)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project context
+This project was developed as part of the **Application Designer & Developer (React-oriented)** training program by OpenClassrooms.  
+It's a projet JavaScript curriculum and focuses on building a customizable and accessible modal component that can be integrated into a web interface.
 
-Currently, two official plugins are available:
+The goal was to create a modal component that:
+- Is reusable across multiple interfaces
+- Handles focus management
+- Supports keyboard accessibility
+- Can be controlled programmatically
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Educational objectives
+- Build an interactive UI component in vanilla JavaScript
+- Manage focus and accessibility (ARIA attributes, tab order, keyboard navigation)
+- Create modular, reusable code
+- Handle events and state in a component
+- Structure code for maintainability and clarity
 
-## Expanding the ESLint configuration
+## Technologies used
+- JavaScript (ES6+)
+- HTML5
+- CSS3
+- DOM manipulation
+- Accessibility (ARIA)
+- Event handling
+- Git / GitHub
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Features
+- Custom modal component
+- Open/close logic with animation support
+- Keyboard accessibility (Escape to close, focus trap)
+- Reusable API (parameters and configuration)
+- Accessible markup with ARIA roles
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
-
----
-
-
-Hello, this is a simple modal component who can be customized.
+## Installation and used
+This is a simple modal component who can be customized.
 (A style css is already apply on the component but you can customized the text notification and the button text)
 
-Quick start :
-1 - If you want to use the library package, you need to install it with the npm command :
+Quick start :  
+1 - If you want to use the library package, you need to install it with the npm command :  
 npm i @makabay/customizedmodal
 
 Otherwise clone the project on github
-
+```bash
+git clone https://github.com/matthieuClio/Formation-concep-logi-CustomizedModal-p10.git
+```
 2 - Import the component : 
 ```js 
 // On a Npm library package use case
@@ -138,3 +142,30 @@ export default function App () {
         </>
     );
 }
+```
+
+## Architecture
+.  
+├── index.html  
+├── css/  
+│   └── style.css  
+├── js/  
+│   ├── modal.js  
+│   └── app.js  
+├── images/  
+└── README.md  
+
+- HTML: markup and modal placeholders
+- CSS: styling and transitions
+- JavaScript: modal logic and event control
+
+## Areas for improvement
+- Add unit tests for open/close and focus logic
+- Expand configuration options (callbacks, hooks)
+- Add animation controls
+- Improve documentation with examples
+- Convert to ES modules for reusability
+
+## Author
+Project by Matthieu Clio  
+Full stack JavaScript web developer
